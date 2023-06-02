@@ -1,0 +1,32 @@
+### GET /api/pets ###
+GET http://localhost:8080/api/pets
+
+### POST /api/pets ###
+POST http://localhost:8080/api/pets
+Content-Type: application/json
+
+{
+  "name": "Max",
+  "description": "A friendly dog"
+}
+
+### GET /api/pets/{1} ###
+GET http://localhost:8080/api/pets/1
+
+### PUT /api/pets/{id} ###
+PUT http://localhost:8080/api/pets/1
+Content-Type: application/json
+
+{
+  "name": "Buddy",
+  "description": "An energetic dog"
+}
+
+### DELETE /api/pets/{id} ###
+DELETE http://localhost:8080/api/pets/1
+### Search Pets with Example ###
+
+GET http://localhost:8080/api/pets/search?name=Common&description=Swall
+Content-Type: application/json
+
+###
